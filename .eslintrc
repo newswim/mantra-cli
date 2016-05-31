@@ -1,12 +1,36 @@
-{
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        },
-    },
-    "rules": {
-        "semi": 2
-    }
-}
+env:
+  browser: true
+  es6: true
+extends: ['eslint:recommended', 'plugin:react/recommended']
+installedESLint: true
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+  sourceType: module
+plugins:
+  - react
+settings:
+  - react
+  - pragma: React
+  - version: 15.0
+rules:
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - warn
+    - never
+  comma-dangle:
+    - error
+    - only-multiline
+  no-console:
+    - warn
+  react/display-name:
+    - off

@@ -1,14 +1,14 @@
-import {Mongo} from 'meteor/mongo';
+import {Mongo} from 'meteor/mongo'
 <% if (collection2) { %>
-import {SimpleSchema} from 'meteor/aldeed:simple-schema';
+import {SimpleSchema} from 'meteor/aldeed:simple-schema'
 <% } %>
 
-const <%= collectionName %> = new Mongo.Collection('<%= collectionFileName %>');
+const <%= collectionName %> = new Mongo.Collection('<%= collectionFileName %>')
 <% if (collection2) { %>
 let schema = new SimpleSchema({
 
-});
+})
 
-<%= collectionName %>.attachSchema(schema);
+<%= collectionName %>.attachSchema(schema)
 <% } %>
-export default <%= collectionName %>;
+export default <%= collectionName %>

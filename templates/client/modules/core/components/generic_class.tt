@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 
 class <%= componentName %> extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props)
+    }
 
-  render() {
-    return (
-      <div>
-        <%= componentName %>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <%= componentName %>
+            </div>
+        )
+    }
 }
 
-export default <%= componentName %>;
+export default <%= componentName %>

@@ -1,18 +1,18 @@
-import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
+import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core'
 
-import <%= componentName %> from '../components/<%= componentFileName %>.jsx';
+import <%= componentName %> from '../components/<%= componentFileName %>.jsx'
 
 export const composer = ({context}, onData) => {
-  const {Meteor, Collections} = context();
+    const {Meteor, Collections} = context()
 
-  onData(null, {});
-};
+    onData(null, {})
+}
 
 export const depsMapper = (context, actions) => ({
-  context: () => context
-});
+    context: () => context
+})
 
 export default composeAll(
-  composeWithTracker(composer),
-  useDeps(depsMapper)
-)(<%= componentName %>);
+    composeWithTracker(composer),
+    useDeps(depsMapper)
+)(<%= componentName %>)
